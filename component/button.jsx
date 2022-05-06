@@ -6,4 +6,5 @@ export const StyledButton = styled.button`
   color: white;
   padding: 15px 20px;
   cursor: pointer;
+  text-decoration: none;
 `;

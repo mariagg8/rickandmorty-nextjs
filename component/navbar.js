@@ -27,5 +27,6 @@ export const StyledNavbar = styled.nav`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: yellow;
+  background-color: gold;
+  padding: 20px;
 `;
