@@ -8,18 +8,18 @@ export default function useFetch(url) {
   console.log(data);
 
   useEffect(() => {
+    setError(null);
+    setLoading(true);
     if (url) {
       fetch(url)
         .then(response => response.json())
         .then(json => {
           setData(json);
           setLoading(false);
-          setError(null);
         })
         .catch(error_ => {
           setError(error_);
           setLoading(false);
-          setData(null);
         });
     }
   }, [url]);
