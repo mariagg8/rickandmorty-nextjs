@@ -18,7 +18,7 @@ export default function Card() {
   );
   console.log(data);
   return (
-    <div>
+    <CardWrapper>
       {loading && <div>Loading…</div>}
       {error && <StyledError>{error.message}</StyledError>}
       {data?.results.map(character => (
@@ -36,15 +36,33 @@ export default function Card() {
               style={{ width: '100px', height: '100px' }}
             ></img>
           </ul>
+          <StyledButton onClick={like}>LIKE</StyledButton>
         </StyledCard>
       ))}
-    </div>
+    </CardWrapper>
   );
 }
 
-export const StyledCard = styled.div`
+function like() {
+  alert('I was clicked');
+}
+
+const StyledButton = styled.button`
+  color: white;
+  background-color: #5151a3;
+`;
+
+const StyledCard = styled.div`
   background-color: #fcfcfc;
   width: 300px;
   height: 300px;
   border-radius: 25px;
+`;
+
+const CardWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  gap: 20px;
 `;
