@@ -13,7 +13,8 @@ export default function Home() {
     <>
       <Header></Header>
       <section>
-        <Card></Card>
+        <h2>Welcome to your Rick and Morty Database</h2>
+        <p>Explore Now</p>
       </section>
 
       <Navbar></Navbar>

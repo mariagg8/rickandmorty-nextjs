@@ -19,9 +19,22 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: #242331;
+    
   }
   h1{
     color: white;
+    font-family: 'Lobster', 'cursive';
+ 
+  }
+
+  h2{
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+ 
+  }
+  p{
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
   }
 `;
 
