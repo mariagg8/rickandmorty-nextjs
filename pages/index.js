@@ -16,6 +16,9 @@ export default function Home() {
         <h2>Welcome to your Rick and Morty Database</h2>
         <p>Explore Now</p>
       </section>
+      <form>
+        <input></input>
+      </form>
 
       <Navbar></Navbar>
     </>
