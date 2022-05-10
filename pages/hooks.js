@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 
 function usePage(initialPage, lastPage) {
   const [currentPage, setCurrentPage] = useState(initialPage);
@@ -31,15 +32,32 @@ function usePage(initialPage, lastPage) {
 // return { counter, increment, decrement };
 //}
 
-export default function Hooks() {
+//export default function Hooks() {
+
+//const {counter, increment, decrement} = useCounter(100)
+
+// return(
+//  <>
+// <h1>Hooks</h1>
+// <button onClick={decrement}>-</button>
+// <span>{counter}</span>
+// <button onClick={increment}>+</button>
+//  </>
+// )
+//}
+export default function Hooks(data) {
   const { currentPage, nextPage, prevPage } = usePage(0);
 
   return (
     <>
       <h1>Hooks</h1>
       <button onClick={prevPage}>previous page</button>
-      <span>{currentPage}</span>
+      <StyledSpan>{currentPage}</StyledSpan>
       <button onClick={nextPage}>next page</button>
     </>
   );
 }
+
+const StyledSpan = styled.span`
+  color: white;
+`;
