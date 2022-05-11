@@ -19,6 +19,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: #242331;
+    font-family: 'Radio Canada', sans-serif;
+    background-image: url('guillaume-le-louarn-uC21aXJ7yQs-unsplash (1).jpg')
     
   }
   h1{
@@ -36,6 +38,8 @@ const GlobalStyle = createGlobalStyle`
     color: white;
     font-family: 'Poppins', 'sans-serif';
   }
+
+
 `;
 
 const theme = {

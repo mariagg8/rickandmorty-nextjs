@@ -14,6 +14,16 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <body>
