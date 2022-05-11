@@ -3,12 +3,6 @@ import styled from 'styled-components';
 
 function usePage(initialPage, lastPage) {
   const [currentPage, setCurrentPage] = useState(initialPage);
-  fetch(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      return data;
-    });
 
   function nextPage() {
     setCurrentPage(currentPage + 1);

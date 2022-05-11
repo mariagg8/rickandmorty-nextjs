@@ -16,7 +16,6 @@ export default function Card() {
   const { data, loading, error } = useFetch(
     'https://rickandmortyapi.com/api/character'
   );
-  console.log(data);
 
   //calling async function from products.js
   async function Handler(character) {

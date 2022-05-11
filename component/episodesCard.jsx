@@ -16,7 +16,7 @@ export default function EpisodesCard() {
   const { data, loading, error } = useFetch(
     'https://rickandmortyapi.com/api/episode'
   );
-  console.log(data);
+
   return (
     <CardWrapper>
       {loading && <div>Loading…</div>}
