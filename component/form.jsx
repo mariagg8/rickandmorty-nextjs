@@ -18,10 +18,8 @@ export default function Form() {
     <StyledForm onSubmit={submitHandler}>
       <label htmlFor="name">Name:</label>
       <input type="text" id="name" name="name" />
-      <label>
-        <input htmlFor> Age:</input>
-        <input type="number" id="age" name="age" />
-      </label>
+      <label htmlFor="age"> Age:</label>
+      <input type="number" id="age" name="age" />
       <button type="submit">Submit</button>
     </StyledForm>
   );
